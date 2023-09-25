@@ -15,6 +15,7 @@ function NavigationButton(label: string, onClick: React.MouseEventHandler | unde
         fontWeight: 'bold',
         fontSize: '1.25rem',
         color: 'white',
+        textShadow: '0.1rem 0.1rem black'
     }
 
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { CSSProperties } from 'react';
 
-function FooterButton(label: string, onClick: React.MouseEventHandler | undefined = undefined) {
+function LinksButton(label: string, onClick: React.MouseEventHandler | undefined = undefined) {
     const root: CSSProperties = {
         cursor: 'pointer',
         WebkitUserSelect: 'none',
@@ -24,4 +24,4 @@ function FooterButton(label: string, onClick: React.MouseEventHandler | undefine
     );
 }
 
-export default FooterButton;
+export default LinksButton;

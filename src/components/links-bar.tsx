@@ -1,13 +1,10 @@
 import React from 'react';
 import { CSSProperties } from 'react';
 import Grid from '@mui/material/Unstable_Grid2';
-import { Stack } from '@mui/material';
-import NavigationButton from './navigation-button';
-import AppButton from './app-button';
 import { useNavigate } from 'react-router-dom';
-import FooterButton from './footer-button';
+import LinksButton from './links-button';
 
-function Footer() {
+function LinksBar() {
     const root: CSSProperties = {
         padding: '1.5rem 0',
         backgroundColor: '#382436',
@@ -47,10 +44,10 @@ function Footer() {
                         Developers
                     </div>
                     <div style={button}>
-                        {FooterButton('Documentation')}
+                        {LinksButton('Documentation', () => {window.open('https://docs.backed.by')})}
                     </div>
                     <div style={button}>
-                        {FooterButton('GitHub')}
+                        {LinksButton('GitHub', () => {window.open('https://github.com/backedby')})}
                     </div>
                 </Grid>
                 <Grid>
@@ -58,13 +55,13 @@ function Footer() {
                         Social
                     </div>
                     <div style={button}>
-                        {FooterButton('Twitter')}
+                        {LinksButton('Twitter', () => {window.open('https://twitter.com/backedbyapp')})}
                     </div>
                     <div style={button}>
-                        {FooterButton('Discord')}
+                        {LinksButton('Discord', () => {window.open('https://discord.com/invite/XG4VBZyxCr')})}
                     </div>
                     <div style={button}>
-                        {FooterButton('LinkedIn')}
+                        {LinksButton('LinkedIn')}
                     </div>
                 </Grid>
                 <Grid>
@@ -72,10 +69,10 @@ function Footer() {
                         Resources
                     </div>
                     <div style={button}>
-                        {FooterButton('White Paper')}
+                        {LinksButton('White Paper', () => {window.open('/BackedByWhitepaper.pdf')})}
                     </div>
                     <div style={button}>
-                        {FooterButton('Audits')}
+                        {LinksButton('Audits', () => {window.open('https://skynet.certik.com/projects/backedby')})}
                     </div>
                 </Grid>
             </Grid>
@@ -86,4 +83,4 @@ function Footer() {
     );
 }
 
-export default Footer;
+export default LinksBar;

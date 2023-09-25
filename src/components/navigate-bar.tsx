@@ -48,7 +48,7 @@ function NavigateBar() {
     return (
         <div style={root}>
             <div style={logoRoot}>
-                <img style={logo} src='images/lockup_horizontal_white.svg'></img>
+                <img style={logo} src='/images/lockup_horizontal_white.svg'></img>
             </div>
             <div style={menuRoot}>
                 <Grid container>

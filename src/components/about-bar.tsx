@@ -3,14 +3,14 @@ import React from 'react';
 import { CSSProperties } from 'react';
 import WhitepaperButton from './whitepaper-button';
 
-function AboutBanner() {
+function AboutBar() {
     const root: CSSProperties = {
         margin: '4rem 0'
     }
 
     const aboutRoot: CSSProperties = {
         width: '30rem',
-        marginTop: '4rem'
+        marginTop: '2rem'
     }
 
     const title: CSSProperties = {
@@ -45,7 +45,7 @@ function AboutBanner() {
 
     return (
         <div style={root}>
-            <Grid container justifyContent='center' columnGap={10}>
+            <Grid container justifyContent='center' columnGap={10} rowGap={10}>
                 <Grid>
                     <div style={aboutRoot}>
                         <div style={title}>
@@ -73,4 +73,4 @@ function AboutBanner() {
     );
 }
 
-export default AboutBanner;
+export default AboutBar;

@@ -8,6 +8,7 @@ function LearnButton(label: string, onClick: React.MouseEventHandler | undefined
         WebkitUserSelect: 'none',
         MozUserSelect: 'none',
         userSelect: 'none',
+        boxShadow: '0.25rem 0.25rem'
     }
 
     const text: CSSProperties = {

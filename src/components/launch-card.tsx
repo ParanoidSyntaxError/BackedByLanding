@@ -4,12 +4,13 @@ import AppButton from './app-button';
 import LearnButton from './learn-button';
 import { Stack } from '@mui/material';
 
-function LaunchBanner() {
+function LaunchCard() {
     const root: CSSProperties = {
         backgroundColor: 'white',
         width: '32rem',
         height: '24rem',
-        border: '0.15rem solid black',
+        border: '0.15rem solid',
+        boxShadow: '0.5rem 0.5rem'
     }
 
     const title: CSSProperties = {
@@ -67,4 +68,4 @@ function LaunchBanner() {
     );
 }
 
-export default LaunchBanner;
+export default LaunchCard;

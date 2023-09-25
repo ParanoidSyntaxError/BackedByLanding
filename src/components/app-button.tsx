@@ -9,13 +9,14 @@ function AppButton() {
         WebkitUserSelect: 'none',
         MozUserSelect: 'none',
         userSelect: 'none',
+        border: '0.15rem solid',
+        boxShadow: '0.25rem 0.25rem',
     }
 
     const text: CSSProperties = {
         fontFamily: 'monospace',
         fontWeight: 'bold',
         fontSize: '1.25rem',
-        border: '0.15rem solid black',
         color: 'white',
         backgroundColor: '#EE2C80',
         padding: '0.75rem',

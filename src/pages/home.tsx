@@ -1,8 +1,8 @@
 import { CSSProperties } from 'react';
 import NavigateBar from '../components/navigate-bar';
-import Mural from '../components/mural';
-import AboutBanner from '../components/about-banner';
-import Footer from '../components/footer';
+import MuralBar from '../components/mural-bar';
+import AboutBar from '../components/about-bar';
+import LinksBar from '../components/links-bar';
 
 function Home() {
     const root: CSSProperties = {
@@ -15,13 +15,13 @@ function Home() {
                 <NavigateBar/>
             </div>
             <div>
-                <Mural/>
+                <MuralBar/>
             </div>
             <div>
-                <AboutBanner/>
+                <AboutBar/>
             </div>
             <div>
-                <Footer/>
+                <LinksBar/>
             </div>
         </div>
     );

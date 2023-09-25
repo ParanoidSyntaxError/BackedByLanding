@@ -8,6 +8,7 @@ function WhitepaperButton(label: string, onClick: React.MouseEventHandler | unde
         WebkitUserSelect: 'none',
         MozUserSelect: 'none',
         userSelect: 'none',
+        boxShadow: '0.25rem 0.25rem'
     }
 
     const text: CSSProperties = {

@@ -1,8 +1,8 @@
 import React from 'react';
 import { CSSProperties } from 'react';
-import LaunchBanner from './launch-banner';
+import LaunchCard from './launch-card';
 
-function Mural() {
+function MuralBar() {
     const root: CSSProperties = {
         margin: '0',
         padding: '0',
@@ -20,10 +20,10 @@ function Mural() {
     return (
         <div style={root}>
             <div style={bannerRoot}>
-                {LaunchBanner()}
+                {LaunchCard()}
             </div>
         </div>
     );
 }
 
-export default Mural;
+export default MuralBar;
