@@ -2,14 +2,16 @@ import Grid from '@mui/material/Unstable_Grid2';
 import React from 'react';
 import { CSSProperties } from 'react';
 import WhitepaperButton from './whitepaper-button';
+import Stack from '@mui/material/Stack';
+import AppButton from './app-button';
 
 function AboutBar() {
     const root: CSSProperties = {
-        margin: '4rem 0'
+        padding: '4rem 0'
     }
 
     const aboutRoot: CSSProperties = {
-        width: '30rem',
+        width: '35rem',
         marginTop: '2rem'
     }
 
@@ -27,10 +29,14 @@ function AboutBar() {
         color: '#382436',
     }
 
+    const appButtonRoot: CSSProperties = {
+        width: '10rem',
+        margin: '0 1.5rem',
+        marginTop: '2rem',
+    }
+
     const whitepaperButtonRoot: CSSProperties = {
-        textAlign: 'center',
-        margin: '0 auto',
-        width: '16rem',
+        margin: '0 1.5rem',
         marginTop: '2rem'
     }
 
@@ -40,7 +46,7 @@ function AboutBar() {
 
     const image: CSSProperties = {
         border: '0.15rem solid black',
-        width: '30rem'
+        width: '35rem',
     }
 
     return (
@@ -54,13 +60,18 @@ function AboutBar() {
                         <div style={body}>
                             BackedBy is a platform for content creators to take ownership of their content, and connection to their audience.
                             <br/><br/>
-                            Creators on BackedBy have total privacy, and custody of their online communities and content, which is achieved by the pseudo anonymity of the blockchain, and the trustless way in which BackedBy was built.
+                            Creators on BackedBy have total privacy, and custody of their online communities and content, which is achieved by the pseudo anonymity of the blockchain, and the permissionless BackedBy protocol.
                             <br/><br/>
-                            No one can get between creators, and their audience.
+                            No one can get between creators, and their supporters.
                         </div>
-                        <div style={whitepaperButtonRoot}>
-                            {WhitepaperButton('READ THE WHITEPAPER')}
-                        </div>
+                        <Stack direction='row'>
+                            <div style={appButtonRoot}>
+                                {AppButton()}
+                            </div>
+                            <div style={whitepaperButtonRoot}>
+                                {WhitepaperButton('READ THE WHITEPAPER')}
+                            </div>
+                        </Stack>
                     </div>
                 </Grid>
                 <Grid>

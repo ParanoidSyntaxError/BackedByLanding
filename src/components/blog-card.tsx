@@ -4,7 +4,7 @@ import { Stack } from '@mui/material';
 function BlogCard(date: string, title: string, author: string) {
     const root: CSSProperties = {
         width: '80vw',
-        maxWidth: '56rem',
+        maxWidth: '48rem',
         border: '0.15rem solid',
         boxShadow: '0.5rem 0.5rem'
     }

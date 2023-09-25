@@ -13,9 +13,8 @@ function NavigationButton(label: string, onClick: React.MouseEventHandler | unde
     const text: CSSProperties = {
         fontFamily: 'monospace',
         fontWeight: 'bold',
-        fontSize: '1.25rem',
+        fontSize: '1.3rem',
         color: 'white',
-        textShadow: '0.1rem 0.1rem black'
     }
 
     return (
